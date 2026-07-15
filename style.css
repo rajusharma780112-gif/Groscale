@@ -1159,3 +1159,15 @@ font-size:22px;
 }
 
 }
+.mobile-close{
+display:flex;
+justify-content:flex-end;
+font-size:28px;
+margin-bottom:25px;
+cursor:pointer;
+color:#fff;
+}
+
+.mobile-close:hover{
+color:#4D7CFE;
+}
