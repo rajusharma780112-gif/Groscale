@@ -1,170 +1,299 @@
-/*=========================================
-GROSCALE V2
-Main JavaScript
-=========================================*/
+/* ==========================================
+   GROSCALE SCRIPT.JS
+   PART 1
+========================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
+/* ==========================
+   SMOOTH SCROLL
+========================== */
 
-    /*=========================================
-    HEADER SCROLL
-    =========================================*/
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-    const header = document.querySelector(".header");
+anchor.addEventListener("click", function(e){
 
-    window.addEventListener("scroll", () => {
+e.preventDefault();
 
-        if (window.scrollY > 50) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
+const target = document.querySelector(this.getAttribute("href"));
 
-    });
+if(target){
 
-    /*=========================================
-    SMOOTH SCROLL
-    =========================================*/
+target.scrollIntoView({
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-
-        anchor.addEventListener("click", function (e) {
-
-            const target = document.querySelector(this.getAttribute("href"));
-
-            if (!target) return;
-
-            e.preventDefault();
-
-            target.scrollIntoView({
-
-                behavior: "smooth"
-
-            });
-
-        });
-
-    });
-
-    /*=========================================
-    ACTIVE NAVIGATION
-    =========================================*/
-
-    const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll(".nav-menu a");
-
-    function activeMenu() {
-
-        let current = "";
-
-        sections.forEach(section => {
-
-            const sectionTop = section.offsetTop - 120;
-
-            if (window.scrollY >= sectionTop) {
-
-                current = section.getAttribute("id");
-
-            }
-
-        });
-
-        navLinks.forEach(link => {
-
-            link.classList.remove("active");
-
-            if (link.getAttribute("href") === "#" + current) {
-
-                link.classList.add("active");
-
-            }
-
-        });
-
-    }
-
-    window.addEventListener("scroll", activeMenu);
-
-    /*=========================================
-    FADE IN ANIMATION
-    =========================================*/
-
-    const revealElements = document.querySelectorAll(
-
-        ".industry-card, .service-card, .capability-item, .process-card, .info-card"
-
-    );
-
-    const observer = new IntersectionObserver(entries => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("show");
-
-            }
-
-        });
-
-    }, {
-
-        threshold: 0.15
-
-    });
-
-    revealElements.forEach(item => {
-
-        item.classList.add("hidden");
-
-        observer.observe(item);
-
-    });
+behavior:"smooth",
+block:"start"
 
 });
-/*=========================================
-MOBILE MENU
-=========================================*/
 
-const menuBtn = document.querySelector(".menu-btn");
+}
 
+});
+
+});
+
+
+/* ==========================
+   HEADER SHADOW
+========================== */
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY > 40){
+
+header.style.boxShadow="0 15px 35px rgba(0,0,0,.35)";
+
+}else{
+
+header.style.boxShadow="none";
+
+}
+
+});
+
+
+/* ==========================
+   ACTIVE NAV LINK
+========================== */
+
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll",()=>{
+
+let currentSection="";
+
+sections.forEach(section=>{
+
+const sectionTop = section.offsetTop - 180;
+const sectionHeight = section.offsetHeight;
+
+if(window.scrollY >= sectionTop){
+
+currentSection = section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+if(link.getAttribute("href")==="#" + currentSection){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+
+/* ==========================
+   FADE-IN ANIMATION
+========================== */
+
+const fadeElements = document.querySelectorAll(
+
+".service-card, .case-card, .testimonial-card, .contact-card, .numbers div, .trust-bar div"
+
+);
+
+const observer = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+entry.target.style.transform="translateY(0)";
+
+}
+
+});
+
+},{
+threshold:0.15
+});
+
+fadeElements.forEach(el=>{
+
+el.style.opacity="0";
+el.style.transform="translateY(50px)";
+el.style.transition="all .7s ease";
+
+observer.observe(el);
+
+});
+/* ==========================================
+   GROSCALE SCRIPT.JS
+   PART 2
+========================================== */
+
+/* ==========================
+   MOBILE MENU
+========================== */
+
+const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
+const menuOverlay = document.querySelector(".menu-overlay");
+const mobileClose = document.querySelector(".mobile-close");
 
-const closeMenu = document.querySelector(".close-menu");
+if(menuToggle){
 
-const overlay = document.querySelector(".menu-overlay");
-
-if(menuBtn){
-
-menuBtn.addEventListener("click",()=>{
+menuToggle.addEventListener("click",()=>{
 
 mobileMenu.classList.add("active");
-
-overlay.classList.add("active");
-
+menuOverlay.classList.add("active");
 document.body.style.overflow="hidden";
 
 });
 
 }
 
-if(closeMenu){
+if(mobileClose){
 
-closeMenu.addEventListener("click",closeMobile);
-
-}
-
-if(overlay){
-
-overlay.addEventListener("click",closeMobile);
+mobileClose.addEventListener("click",closeMenu);
 
 }
 
-function closeMobile(){
+if(menuOverlay){
+
+menuOverlay.addEventListener("click",closeMenu);
+
+}
+
+document.querySelectorAll(".mobile-menu a").forEach(link=>{
+
+link.addEventListener("click",closeMenu);
+
+});
+
+function closeMenu(){
 
 mobileMenu.classList.remove("active");
-
-overlay.classList.remove("active");
-
+menuOverlay.classList.remove("active");
 document.body.style.overflow="";
 
 }
+
+/* ==========================
+   ESC KEY CLOSE
+========================== */
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key==="Escape"){
+
+closeMenu();
+
+}
+
+});
+
+/* ==========================
+   HERO COUNTER ANIMATION
+========================== */
+
+const counters = document.querySelectorAll(".stats h2");
+
+const counterObserver = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+animateCounter(entry.target);
+
+counterObserver.unobserve(entry.target);
+
+}
+
+});
+
+},{threshold:0.5});
+
+counters.forEach(counter=>{
+
+counterObserver.observe(counter);
+
+});
+
+function animateCounter(counter){
+
+const original = counter.innerText;
+
+const number = parseInt(original.replace(/\D/g,""));
+
+const suffix = original.replace(/[0-9]/g,"");
+
+let current = 0;
+
+const increment = Math.max(1,Math.ceil(number/80));
+
+const timer = setInterval(()=>{
+
+current += increment;
+
+if(current >= number){
+
+counter.innerText = original;
+clearInterval(timer);
+
+}else{
+
+counter.innerText = current + suffix;
+
+}
+
+},20);
+
+}
+
+/* ==========================
+   WHATSAPP BUTTON
+========================== */
+
+const whatsapp = document.querySelector(".whatsapp-float");
+
+if(whatsapp){
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY > 300){
+
+whatsapp.style.opacity="1";
+whatsapp.style.transform="translateY(0)";
+
+}else{
+
+whatsapp.style.opacity=".75";
+whatsapp.style.transform="translateY(8px)";
+
+}
+
+});
+
+}
+
+/* ==========================
+   IMAGE HOVER EFFECT
+========================== */
+
+document.querySelectorAll(".case-card img").forEach(img=>{
+
+img.addEventListener("mouseenter",()=>{
+
+img.style.transform="scale(1.06)";
+
+});
+
+img.addEventListener("mouseleave",()=>{
+
+img.style.transform="scale(1)";
+
+});
+
+});
