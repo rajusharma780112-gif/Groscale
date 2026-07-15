@@ -1871,3 +1871,24 @@ padding:30px;
 }
 
 }
+/*=========================================
+SCROLL ANIMATION
+=========================================*/
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:all .7s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
