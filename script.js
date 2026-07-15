@@ -121,4 +121,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/*=========================================
+MOBILE MENU
+=========================================*/
 
+const menuBtn = document.querySelector(".menu-btn");
+
+const mobileMenu = document.querySelector(".mobile-menu");
+
+const closeMenu = document.querySelector(".close-menu");
+
+const overlay = document.querySelector(".menu-overlay");
+
+if(menuBtn){
+
+menuBtn.addEventListener("click",()=>{
+
+mobileMenu.classList.add("active");
+
+overlay.classList.add("active");
+
+document.body.style.overflow="hidden";
+
+});
+
+}
+
+if(closeMenu){
+
+closeMenu.addEventListener("click",closeMobile);
+
+}
+
+if(overlay){
+
+overlay.addEventListener("click",closeMobile);
+
+}
+
+function closeMobile(){
+
+mobileMenu.classList.remove("active");
+
+overlay.classList.remove("active");
+
+document.body.style.overflow="";
+
+}
