@@ -179,7 +179,7 @@ header{
 }
 header.scrolled{
   padding: 14px 0;
-  background: rgba(10,14,23,0.82);
+  background: rgba(20,20,20,0.85);
   backdrop-filter: blur(14px) saturate(140%);
   border-bottom: 1px solid var(--border);
 }
