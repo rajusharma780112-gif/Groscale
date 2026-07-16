@@ -124,7 +124,7 @@ p{ color: var(--text-muted); font-weight: 300; }
 }
 
 .section-title{
-  max-width: 640px;
+  max-width: 700px;
   margin: 0 0 64px;
 }
 .section-title h2{ margin: 14px 0 16px; }
@@ -191,7 +191,7 @@ header.scrolled{
   gap: 24px;
 }
 
-.logo img{ height: 44px; width: auto; }
+.logo img{ height: 54px; width: auto; }
 
 header nav{
   display: flex;
@@ -313,7 +313,7 @@ header nav a.active::after{ width: 100%; }
   color: transparent;
   display: inline;
 }
-.hero-content > p{ font-size: 1.08rem; max-width: 520px; margin-bottom: 34px; }
+.hero-content > p{ font-size: 1.08rem; max-width: 560px; margin-bottom: 34px; }
 
 .hero-buttons{
   display: flex;
@@ -324,10 +324,12 @@ header nav a.active::after{ width: 100%; }
 
 .hero-stats{
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 32px 40px;
   border-top: 1px solid var(--border);
   padding-top: 32px;
 }
+.hero-stats > div{ min-width: 100px; }
 .hero-stats h2{
   font-size: 1.9rem;
   font-weight: 700;
@@ -547,7 +549,7 @@ header nav a.active::after{ width: 100%; }
   opacity: 0.4;
 }
 .cta-box h2{ margin-bottom: 16px; position: relative; }
-.cta-box p{ max-width: 520px; margin: 0 auto 34px; position: relative; font-size: 1.02rem; }
+.cta-box p{ max-width: 580px; margin: 0 auto 34px; position: relative; font-size: 1.02rem; }
 .cta-box .btn{ position: relative; }
 
 /* ================= CONTACT ================= */
@@ -640,7 +642,7 @@ footer{
   gap: 40px;
   padding-bottom: 60px;
 }
-.footer-grid img{ height: 30px; margin-bottom: 18px; }
+.footer-grid img{ height: 40px; margin-bottom: 18px; }
 .footer-grid > div > p{ font-size: 0.88rem; max-width: 320px; }
 .footer-grid h4{ font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 18px; color: var(--text-dim); }
 .footer-grid a{
