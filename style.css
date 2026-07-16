@@ -192,7 +192,14 @@ header.scrolled{
 }
 
 .logo{ display: flex; align-items: center; gap: 12px; }
-.logo img{ height: 54px; width: auto; }
+.logo-mark{ height: 40px; width: 40px; flex-shrink: 0; }
+.logo-word{
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  white-space: nowrap;
+}
 .logo-tag{
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -372,7 +379,7 @@ header nav a.active::after{ width: 100%; }
   mix-blend-mode: screen;
   pointer-events: none;
 }
-.hero-image img{ width: 100%; height: 100%; object-fit: cover; }
+.hero-image img{ width: 100%; height: 100%; object-fit: cover; min-height: 320px; }
 
 /* ================= BRANDS / TICKER STRIP ================= */
 .brands{
@@ -465,6 +472,7 @@ header nav a.active::after{ width: 100%; }
 
 /* ================= ABOUT ================= */
 .about .hero-image::after{ opacity: 0.18; }
+.about .hero-image img{ min-height: 420px; }
 .feature-list{ margin-top: 34px; display: flex; flex-direction: column; gap: 22px; }
 .feature{ display: flex; gap: 16px; align-items: flex-start; }
 .feature > div{ min-width: 0; }
@@ -660,7 +668,7 @@ footer{
   padding-bottom: 60px;
 }
 .footer-grid > div{ min-width: 0; }
-.footer-grid img{ height: 40px; margin-bottom: 18px; }
+.footer-logo{ margin-bottom: 18px; }
 .footer-grid > div > p{ font-size: 0.88rem; max-width: 320px; }
 .footer-grid h4{ font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 18px; color: var(--text-dim); }
 .footer-grid a{
@@ -723,7 +731,6 @@ footer{
   .hero-image{ order: -1; }
   .industry-grid, .services-grid, .case-grid, .testimonial-grid{ grid-template-columns: repeat(2, 1fr); }
   .footer-grid{ grid-template-columns: 1fr 1fr; }
-  .about .hero-grid .hero-image{ order: 0; }
 }
 
 @media (max-width: 860px){
