@@ -324,6 +324,14 @@ header nav a.active::after{ width: 100%; }
   align-items: center;
 }
 
+/* Hero image now stacks BELOW the text/stats block at every width */
+.hero .hero-grid{
+  grid-template-columns: 1fr;
+}
+.hero .hero-image{
+  margin-top: 48px;
+}
+
 .hero-content h1{ margin: 18px 0 22px; }
 .hero-content h1 span{
   background: linear-gradient(100deg, var(--accent) 0%, var(--accent-light) 100%);
@@ -744,7 +752,6 @@ footer{
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px){
   .hero-grid{ grid-template-columns: 1fr; }
-  .hero-image{ order: -1; }
   .industry-grid, .services-grid, .case-grid, .testimonial-grid{ grid-template-columns: repeat(2, 1fr); }
   .footer-grid{ grid-template-columns: 1fr 1fr; }
 }
