@@ -330,6 +330,7 @@ header nav a.active::after{ width: 100%; }
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  -webkit-text-fill-color: transparent;
   display: inline;
 }
 .hero-content > p{ font-size: 1.08rem; max-width: 560px; margin-bottom: 34px; }
@@ -605,7 +606,12 @@ header nav a.active::after{ width: 100%; }
   font-size: 1rem;
 }
 .contact-card h3{ font-size: 0.95rem; margin-bottom: 4px; }
-.contact-card a, .contact-card p{ font-size: 0.9rem; color: var(--text-muted); }
+.contact-card a, .contact-card p{
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .contact-card a:hover{ color: var(--accent); }
 
 .contact-form{
@@ -681,7 +687,15 @@ footer{
 .footer-grid a:hover{ color: var(--accent); }
 .footer-grid p a{ display: inline; margin-bottom: 0; color: inherit; }
 .footer-grid p a:hover{ color: var(--accent); }
-.footer-grid p{ font-size: 0.9rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.footer-grid p{
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .footer-grid i{ color: var(--accent); }
 
 .copyright{
