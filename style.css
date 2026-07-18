@@ -679,6 +679,8 @@ footer{
   transition: color 0.2s;
 }
 .footer-grid a:hover{ color: var(--accent); }
+.footer-grid p a{ display: inline; margin-bottom: 0; color: inherit; }
+.footer-grid p a:hover{ color: var(--accent); }
 .footer-grid p{ font-size: 0.9rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
 .footer-grid i{ color: var(--accent); }
 
