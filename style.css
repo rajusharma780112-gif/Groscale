@@ -191,28 +191,24 @@ header.scrolled{
   border-bottom: 1px solid var(--border);
 }
 
-/* Nav is a simple flex bar; the logo is pulled OUT of this flow and
-   centered with position:absolute. .nav gets an explicit HEIGHT
-   (not min-height) that is always taller than the logo, so the logo
-   is fully contained inside the fixed header and can never spill
-   into the page content below it, on any screen. */
+/* Real 3-column grid: nav-links | logo | actions.
+   Grid tracks cannot overlap, so no matter how wide the nav list
+   or button gets, the logo's own column stays reserved and centered —
+   this is what actually prevents the "About" link colliding with it. */
 .nav{
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr);
   align-items: center;
   gap: 24px;
-  height: 72px;
+  min-height: 72px;
 }
 
 .logo{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  grid-column: 2;
+  justify-self: center;
   display: flex;
   align-items: center;
   gap: 12px;
-  z-index: 1;
 }
 .logo img{ height: 58px; width: auto; }
 .logo-tag{
@@ -228,9 +224,12 @@ header.scrolled{
 }
 
 header nav{
+  grid-column: 1;
+  justify-self: start;
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 30px;
+  min-width: 0;
 }
 header nav a{
   font-size: 0.9rem;
@@ -238,6 +237,7 @@ header nav a{
   color: var(--text-muted);
   position: relative;
   padding: 4px 0;
+  white-space: nowrap;
   transition: color 0.2s;
 }
 header nav a::after{
@@ -253,11 +253,17 @@ header nav a.active{ color: var(--text); }
 header nav a:hover::after,
 header nav a.active::after{ width: 100%; }
 
-/* Right-side controls always flush right, whichever is visible */
-.nav > .btn{ padding: 11px 24px; font-size: 0.85rem; margin-left: auto; }
+.nav > .btn{
+  grid-column: 3;
+  justify-self: end;
+  padding: 11px 24px;
+  font-size: 0.85rem;
+}
 
 .menu-toggle{
   display: none;
+  grid-column: 3;
+  justify-self: end;
   width: 40px; height: 40px;
   align-items: center; justify-content: center;
   border: 1px solid var(--border);
@@ -265,7 +271,6 @@ header nav a.active::after{ width: 100%; }
   cursor: pointer;
   color: var(--text);
   font-size: 1rem;
-  margin-left: auto;
 }
 
 .mobile-menu{
@@ -781,15 +786,22 @@ footer{
   .hero{ padding: 175px 0 80px; }
   .contact-grid{ grid-template-columns: 1fr; }
 
-  /* Taller mobile header bar so the enlarged, lowered logo stays
-     fully inside the fixed header and never overlaps page content */
-  .nav{ height: 96px; }
+  /* Mobile: only logo + menu button remain, so the grid collapses
+     to two columns. The row is taller and the logo sits lower and
+     bigger inside it, per request — the grid still keeps it fully
+     contained and centered, with no risk of overlap since nav
+     links are hidden on this breakpoint. */
+  .nav{
+    grid-template-columns: 1fr auto;
+    min-height: 96px;
+  }
   .logo{
-    top: auto;
-    bottom: 10px;
-    transform: translateX(-50%);
+    grid-column: 1 / span 2;
+    align-self: end;
+    padding-bottom: 10px;
   }
   .logo img{ height: 80px; }
+  .menu-toggle{ grid-column: 2; align-self: center; }
 }
 
 @media (max-width: 640px){
