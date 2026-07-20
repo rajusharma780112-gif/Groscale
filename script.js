@@ -1,1320 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>GroScale | Performance Marketing for iGaming, Forex & Crypto</title>
-
-<meta name="description"
-content="GroScale helps iGaming, Forex and Crypto brands scale through performance marketing, media buying, affiliate marketing and SEO.">
-
-<meta name="keywords"
-content="Performance Marketing, Media Buying, iGaming Marketing, Forex Marketing, Crypto Marketing">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<link rel="stylesheet"
-href="style.css">
-
-</head>
-
-<body>
-
-<!-- ================= HEADER ================= -->
-
-<header>
-
-<div class="container nav">
-
-<a href="#home" class="logo">
-
-<img src="logo.webp" alt="GroScale Logo">
-
-<span class="logo-tag">Performance Marketing</span>
-
-</a>
-
-<nav>
-
-<a href="#home">Home</a>
-
-<a href="#services">Services</a>
-
-<a href="#industries">Industries</a>
-
-<a href="#results">Results</a>
-
-<a href="#about">About</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
-
-<a href="#contact" class="btn">
-
-Book Strategy Call
-
-</a>
-
-<div class="menu-toggle">
-
-<i class="fas fa-bars"></i>
-
-</div>
-
-</div>
-
-<!-- Mobile Menu -->
-
-<div class="mobile-menu">
-
-<div class="mobile-close">
-
-<i class="fas fa-times"></i>
-
-</div>
-
-<a href="#home">Home</a>
-
-<a href="#services">Services</a>
-
-<a href="#industries">Industries</a>
-
-<a href="#results">Results</a>
-
-<a href="#about">About</a>
-
-<a href="#contact">Contact</a>
-
-<a href="#contact" class="btn mobile-btn">
-
-Book Strategy Call
-
-</a>
-
-</div>
-
-<div class="menu-overlay"></div>
-
-</header>
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-<div class="container hero-grid">
-
-<div class="hero-content">
-
-<span class="hero-badge">
-
-GLOBAL PERFORMANCE MARKETING AGENCY
-
-</span>
-
-<h1>
-
-Helping
-
-<span>
-
-iGaming, Forex & Crypto
-
-</span>
-
-Brands Scale Faster.
-
-</h1>
-
-<p>
-
-GroScale is a full-funnel performance marketing partner for ambitious iGaming,
-Forex and Crypto brands. We combine paid media, affiliate networks, SEO and
-conversion science into a single growth engine — built to acquire high-value
-customers, lower your cost per acquisition and compound revenue quarter over
-quarter. No guesswork, no vanity metrics. Just campaigns engineered around the
-numbers that actually move your business: FTDs, ROAS, LTV and retention.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#contact" class="btn">
-
-Book Strategy Call
-
-</a>
-
-<a href="#services" class="btn btn-outline">
-
-Our Services
-
-</a>
-
-</div>
-
-<div class="hero-stats">
-
-<div>
-
-<h2>100M+</h2>
-
-<p>Ad Impressions</p>
-
-</div>
-
-<div>
-
-<h2>500K+</h2>
-
-<p>Users Acquired</p>
-
-</div>
-
-<div>
-
-<h2>20+</h2>
-
-<p>Global Markets</p>
-
-</div>
-
-<div>
-
-<h2>6.2X</h2>
-
-<p>Avg. Client ROAS</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-
-<img src="https://images.unsplash.com/photo-1686061593213-98dad7c599b9?q=80&w=1920&h=1080&auto=format&fit=crop"
-alt="GroScale Dashboard">
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= TRUSTED BY ================= -->
-
-<section class="brands">
-
-<div class="container">
-
-<p>
-
-Trusted by growth-stage and enterprise brands across
-
-<strong>
-
-iGaming • Forex • Crypto • Web3
-
-</strong>
-
-— operating in regulated markets across Europe, LATAM, Africa and Asia.
-
-</p>
-
-</div>
-
-</section>
-<!-- ================= INDUSTRIES ================= -->
-
-<section class="industries section" id="industries">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>OUR EXPERTISE</span>
-
-<h2>Specialists in High-Growth, High-Regulation Industries</h2>
-
-<p>
-
-iGaming, Forex and Crypto aren't generic verticals — they come with strict
-compliance requirements, platform restrictions and razor-thin margins for
-error. We've built our media buying, tracking and creative processes
-specifically around these constraints, so every campaign acquires quality
-users while staying compliant and maximising long-term profitability.
-
-</p>
-
-</div>
-
-<div class="industry-grid">
-
-<div class="industry-card">
-
-<img src="https://images.unsplash.com/photo-1517232115160-ff93364542dd?q=80&w=1200&auto=format&fit=crop" alt="iGaming Marketing">
-
-<h3>iGaming</h3>
-
-<p>
-
-Player acquisition, first-time deposits, sportsbook and casino growth,
-retention campaigns and affiliate marketing across regulated and
-grey-market GEOs. We manage everything from creative testing to
-compliance-safe ad accounts, so you can scale without account bans
-slowing you down.
-
-</p>
-
-</div>
-
-<div class="industry-card">
-
-<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop" alt="Forex Marketing">
-
-<h3>Forex</h3>
-
-<p>
-
-High-quality trader acquisition, verified lead generation, funnel
-optimization and compliant advertising strategies built for brokers
-and prop-trading firms. We focus on traders who fund and trade, not
-just clicks — reducing wasted spend on low-intent leads.
-
-</p>
-
-</div>
-
-<div class="industry-card">
-
-<img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=1200&auto=format&fit=crop" alt="Crypto Marketing">
-
-<h3>Crypto</h3>
-
-<p>
-
-Exchange growth, Web3 marketing, token launches, community acquisition
-and global user growth campaigns. From KYC-verified sign-ups to
-liquidity-focused trader acquisition, we help crypto platforms grow
-sustainably through volatile market cycles.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= SERVICES ================= -->
-
-<section class="services section" id="services">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>OUR SERVICES</span>
-
-<h2>Performance Marketing Built for Scale</h2>
-
-<p>
-
-From strategy to execution, GroScale delivers data-driven campaigns
-focused on measurable business growth — not impressions, clicks or other
-metrics that don't move revenue. Every service below plugs into a single,
-integrated growth strategy.
-
-</p>
-
-</div>
-
-<div class="services-grid">
-
-<div class="service-card">
-
-<div class="icon">
-
-<i class="fas fa-bullseye"></i>
-
-</div>
-
-<h3>Performance Marketing</h3>
-
-<p>
-
-ROI-focused paid campaigns across Google, Meta, native advertising and
-premium traffic sources, built around your target CPA and payback
-period from day one.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">
-
-<i class="fas fa-chart-line"></i>
-
-</div>
-
-<h3>Media Buying</h3>
-
-<p>
-
-Scale globally with intelligent media buying strategies backed by
-continuous optimisation, dedicated ad accounts and direct publisher
-relationships across premium traffic sources.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">
-
-<i class="fas fa-handshake"></i>
-
-</div>
-
-<h3>Affiliate Marketing</h3>
-
-<p>
-
-Develop high-performing affiliate partnerships that consistently drive
-quality traffic and revenue, with full affiliate management, tracking
-and fraud monitoring built in.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">
-
-<i class="fas fa-magnifying-glass-chart"></i>
-
-</div>
-
-<h3>SEO & Organic Growth</h3>
-
-<p>
-
-Technical SEO, authority building and content marketing that generate
-long-term organic visibility, reducing your reliance on paid channels
-over time.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">
-
-<i class="fas fa-arrow-trend-up"></i>
-
-</div>
-
-<h3>Conversion Optimisation</h3>
-
-<p>
-
-Improve every stage of your funnel using landing page optimisation, A/B
-testing and behavioural insights — turning more of your existing traffic
-into paying customers.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">
-
-<i class="fas fa-chart-pie"></i>
-
-</div>
-
-<h3>Analytics & Reporting</h3>
-
-<p>
-
-Transparent dashboards and performance reports that help you make
-smarter business decisions, with full visibility into spend, CPA, ROAS
-and LTV in real time.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= WHY GROSCALE ================= -->
-
-<section class="about section" id="about">
-
-<div class="container hero-grid about-grid">
-
-<div class="hero-content">
-
-<span class="hero-badge">
-
-WHY GROSCALE
-
-</span>
-
-<h2>
-
-Growth Strategies Powered by Data, Not Guesswork.
-
-</h2>
-
-<p>
-
-We don't chase vanity metrics. Every campaign is built around customer
-acquisition, profitability and sustainable long-term growth. Our team
-combines strategy, media buying, creative optimisation and analytics to
-help ambitious brands outperform their competitors — with the transparency
-to see exactly where every dollar of ad spend is going and what it's
-returning.
-
-</p>
-
-<div class="feature-list">
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<div>
-
-<h4>ROI-Focused Campaigns</h4>
-
-<p>
-
-Every advertising dollar is measured and optimised against a clear
-target CPA and ROAS — not vanity impressions.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<div>
-
-<h4>Global Market Experience</h4>
-
-<p>
-
-Campaigns across multiple GEOs and regulated industries, with local
-compliance and creative adapted to each market.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<div>
-
-<h4>Transparent Reporting</h4>
-
-<p>
-
-Real-time insights, dashboards and measurable performance — no black
-box, no waiting on monthly reports to see what's working.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<div>
-
-<h4>Dedicated Growth Team</h4>
-
-<p>
-
-A senior strategist, media buyer and analyst assigned to your account —
-not a rotating pool of junior generalists.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="GroScale Team">
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= PROCESS ================= -->
-
-<section class="process section">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>OUR PROCESS</span>
-
-<h2>How We Scale Brands</h2>
-
-<p>
-
-Every campaign follows a proven growth framework focused on performance,
-optimization and measurable ROI — from first audit to full-scale global
-rollout.
-
-</p>
-
-</div>
-
-<div class="services-grid">
-
-<div class="service-card">
-
-<div class="icon">
-
-01
-
-</div>
-
-<h3>Discovery</h3>
-
-<p>
-
-Understanding your business, competitors, audience and growth objectives
-through a full account, funnel and creative audit before any spend moves.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">
-
-02
-
-</div>
-
-<h3>Strategy</h3>
-
-<p>
-
-Creating a custom acquisition strategy using the right channels,
-creatives and GEOs — mapped against your target CPA and available budget.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">
-
-03
-
-</div>
-
-<h3>Launch & Optimize</h3>
-
-<p>
-
-Launching campaigns and continuously improving performance through
-testing, creative iteration and weekly optimisation cycles.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">
-
-04
-
-</div>
-
-<h3>Scale</h3>
-
-<p>
-
-Increasing profitable traffic while maintaining sustainable ROAS and
-growth, expanding into new GEOs and channels as performance compounds.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= RESULTS ================= -->
-
-<section class="results section" id="results">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>SUCCESS STORIES</span>
-
-<h2>Performance That Speaks for Itself</h2>
-
-<p>
-
-Our campaigns are built around measurable business outcomes — not vanity
-metrics. Here's a snapshot of the kind of results our clients see within
-the first few months of working with us.
-
-</p>
-
-</div>
-
-<div class="case-grid">
-
-<div class="case-card">
-
-<img src="https://images.unsplash.com/photo-1517232115160-ff93364542dd?q=80&w=1200&auto=format&fit=crop" alt="iGaming Growth">
-
-<div class="case-content">
-
-<span class="industry">
-
-iGaming
-
-</span>
-
-<h3>
-
-320% Increase in First-Time Deposits
-
-</h3>
-
-<p>
-
-Optimized acquisition campaigns across multiple GEOs significantly reduced
-CPA while increasing player quality, driving a sharp rise in first-time
-deposits within the first quarter.
-
-</p>
-
-<div class="metrics">
-
-<div>
-
-<h4>+320%</h4>
-
-<span>FTDs</span>
-
-</div>
-
-<div>
-
-<h4>5.9X</h4>
-
-<span>ROAS</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="case-card">
-
-<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop" alt="Forex Campaign">
-
-<div class="case-content">
-
-<span class="industry">
-
-Forex
-
-</span>
-
-<h3>
-
-Verified Trader Lead Generation
-
-</h3>
-
-<p>
-
-Multi-channel campaigns generated high-intent traders with lower
-acquisition costs and better conversion rates, cutting wasted spend on
-unqualified leads.
-
-</p>
-
-<div class="metrics">
-
-<div>
-
-<h4>+470%</h4>
-
-<span>Leads</span>
-
-</div>
-
-<div>
-
-<h4>-42%</h4>
-
-<span>CPA</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="case-card">
-
-<img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=1200&auto=format&fit=crop" alt="Crypto Growth">
-
-<div class="case-content">
-
-<span class="industry">
-
-Crypto
-
-</span>
-
-<h3>
-
-Global User Acquisition Campaign
-
-</h3>
-
-<p>
-
-Strategic media buying accelerated platform growth while improving
-customer retention and profitability across a fast-moving, highly
-competitive market.
-
-</p>
-
-<div class="metrics">
-
-<div>
-
-<h4>+210%</h4>
-
-<span>Users</span>
-
-</div>
-
-<div>
-
-<h4>6.4X</h4>
-
-<span>ROAS</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= TESTIMONIALS ================= -->
-
-<section class="testimonials section">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>CLIENT TESTIMONIALS</span>
-
-<h2>Trusted by High-Growth Brands</h2>
-
-<p>
-
-We build long-term partnerships based on transparency, performance and
-consistent business growth — here's what our clients have to say about
-working with GroScale.
-
-</p>
-
-</div>
-
-<div class="testimonial-grid">
-
-<div class="testimonial-card">
-
-<div class="stars">
-
-★★★★★
-
-</div>
-
-<p>
-
-GroScale transformed our acquisition strategy. Their media buying expertise
-helped us scale internationally while maintaining excellent ROI, and their
-reporting made it easy to see exactly where every dollar was going.
-
-</p>
-
-<div class="client">
-
-<img src="https://i.pravatar.cc/120?img=12" alt="Client">
-
-<div>
-
-<h4>Michael Carter</h4>
-
-<span>Head of Growth • iGaming</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="testimonial-card">
-
-<div class="stars">
-
-★★★★★
-
-</div>
-
-<p>
-
-Professional, transparent and incredibly responsive. Their reporting is
-clear and the campaign performance exceeded expectations from the very
-first month we worked together.
-
-</p>
-
-<div class="client">
-
-<img src="https://i.pravatar.cc/120?img=22" alt="Client">
-
-<div>
-
-<h4>Sarah Wilson</h4>
-
-<span>Marketing Director • Forex</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="testimonial-card">
-
-<div class="stars">
-
-★★★★★
-
-</div>
-
-<p>
-
-The GroScale team understands performance marketing inside out. We've seen
-consistent growth month after month, and they've become a true extension
-of our internal team.
-
-</p>
-
-<div class="client">
-
-<img src="https://i.pravatar.cc/120?img=32" alt="Client">
-
-<div>
-
-<h4>David Robinson</h4>
-
-<span>Founder • Crypto Platform</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= CTA ================= -->
-
-<section class="cta section">
-
-<div class="container">
-
-<div class="cta-box">
-
-<h2>
-
-Ready to Scale Your Business?
-
-</h2>
-
-<p>
-
-Whether you're launching a new brand or scaling an established business,
-GroScale is ready to help you acquire more customers, lower your CPA and
-maximize ROI — with a strategy built specifically around your market and
-growth goals.
-
-</p>
-
-<a href="#contact" class="btn">
-
-Book Your Strategy Call
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= CONTACT ================= -->
-
-<section class="contact section" id="contact">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>GET IN TOUCH</span>
-
-<h2>Let's Build Your Next Growth Story</h2>
-
-<p>
-
-Speak with our performance marketing specialists and discover how
-GroScale can help your brand acquire more customers and scale profitably.
-Tell us about your business below and we'll get back to you within one
-business day with next steps.
-
-</p>
-
-</div>
-
-<div class="contact-grid">
-
-<div class="contact-info">
-
-<div class="contact-card">
-
-<i class="fas fa-envelope"></i>
-
-<div>
-
-<h3>Email</h3>
-
-<a href="mailto:hello@groscale.com">
-
-hello@groscale.com
-
-</a>
-
-</div>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fab fa-whatsapp"></i>
-
-<div>
-
-<h3>WhatsApp</h3>
-
-<a href="https://wa.me/918329064194" target="_blank">
-
-+91 83290 64194
-
-</a>
-
-</div>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fas fa-globe"></i>
-
-<div>
-
-<h3>Industries</h3>
-
-<p>
-
-iGaming • Forex • Crypto • Web3
-
-</p>
-
-</div>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fas fa-clock"></i>
-
-<div>
-
-<h3>Business Hours</h3>
-
-<p>
-
-Monday – Saturday<br>
-
-9:00 AM – 6:00 PM
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="contact-form">
-
-<form>
-
-<input
-type="text"
-placeholder="Your Name"
-required>
-
-<input
-type="email"
-placeholder="Email Address"
-required>
-
-<input
-type="text"
-placeholder="Company Name">
-
-<select required>
-
-<option selected disabled>
-
-Select Industry
-
-</option>
-
-<option>iGaming</option>
-
-<option>Forex</option>
-
-<option>Crypto</option>
-
-<option>Other</option>
-
-</select>
-
-<textarea
-rows="6"
-placeholder="Tell us about your project..."
-required></textarea>
-
-<button type="submit" class="btn">
-
-Book Strategy Call
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<div class="container footer-grid">
-
-<div>
-
-<img src="logo.webp"
-alt="GroScale Logo">
-
-<p>
-
-GroScale is a global performance marketing agency helping ambitious
-iGaming, Forex and Crypto brands scale through media buying, affiliate
-marketing, SEO and data-driven growth strategies. We partner with
-brands across regulated markets in Europe, LATAM, Africa and Asia to
-build acquisition engines that compound over time — not just short-term
-spikes in traffic.
-
-</p>
-
-</div>
-
-<div>
-
-<h4>Services</h4>
-
-<a href="#services">Performance Marketing</a>
-
-<a href="#services">Media Buying</a>
-
-<a href="#services">Affiliate Marketing</a>
-
-<a href="#services">SEO</a>
-
-<a href="#services">Analytics</a>
-
-</div>
-
-<div>
-
-<h4>Company</h4>
-
-<a href="#home">Home</a>
-
-<a href="#industries">Industries</a>
-
-<a href="#results">Results</a>
-
-<a href="#about">About</a>
-
-<a href="#contact">Contact</a>
-
-</div>
-
-<div>
-
-<h4>Contact</h4>
-
-<p>
-
-<i class="fas fa-envelope"></i>
-
-hello@groscale.com
-
-</p>
-
-<p>
-
-<i class="fab fa-whatsapp"></i>
-
-+91 83290 64194
-
-</p>
-
-<p>
-
-Performance Marketing Specialists
-
-<br>
-
-iGaming • Forex • Crypto
-
-</p>
-
-</div>
-
-</div>
-
-<div class="copyright">
-
-© 2026 GroScale. All Rights Reserved.
-
-</div>
-
-</footer>
-
-<!-- ================= WHATSAPP ================= -->
-
-<a href="https://wa.me/918329064194"
-
-class="whatsapp-float"
-
-target="_blank"
-
-aria-label="WhatsApp">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ================= HEADER SCROLL STATE ================= */
+  const header = document.querySelector('header');
+  const onScroll = () => {
+    if (window.scrollY > 40) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ================= MOBILE MENU ================= */
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileClose = document.querySelector('.mobile-close');
+  const menuOverlay = document.querySelector('.menu-overlay');
+  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+  const openMenu = () => {
+    mobileMenu.classList.add('active');
+    menuOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeMenu = () => {
+    mobileMenu.classList.remove('active');
+    menuOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  menuToggle?.addEventListener('click', openMenu);
+  mobileClose?.addEventListener('click', closeMenu);
+  menuOverlay?.addEventListener('click', closeMenu);
+  mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+  /* ================= ACTIVE NAV LINK ON SCROLL ================= */
+  const navLinks = document.querySelectorAll('header nav a');
+  const sections = Array.from(navLinks)
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+  const setActiveLink = () => {
+    let currentId = sections[0]?.id;
+    const scrollPos = window.scrollY + 140;
+    sections.forEach(section => {
+      if (section.offsetTop <= scrollPos) currentId = section.id;
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
+    });
+  };
+  setActiveLink();
+  window.addEventListener('scroll', setActiveLink, { passive: true });
+
+  /* ================= SCROLL REVEAL ================= */
+  const revealTargets = document.querySelectorAll(
+    '.industry-card, .service-card, .case-card, .testimonial-card, .section-title, .feature, .contact-card, .contact-form'
+  );
+  revealTargets.forEach((el, i) => {
+    el.setAttribute('data-reveal', '');
+    el.style.transitionDelay = `${(i % 3) * 90}ms`;
+  });
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+  revealTargets.forEach(el => revealObserver.observe(el));
+
+  /* ================= HERO STAT COUNTERS ================= */
+  const statEls = document.querySelectorAll('.hero-stats h2');
+  const parseStat = (text) => {
+    const match = text.match(/^([\d.]+)([A-Za-z%+]*)/);
+    if (!match) return null;
+    return { value: parseFloat(match[1]), suffix: match[2] || '' };
+  };
+
+  const animateCount = (el) => {
+    const parsed = parseStat(el.textContent.trim());
+    if (!parsed) return;
+    const { value, suffix } = parsed;
+    const duration = 1400;
+    const start = performance.now();
+    const isDecimal = String(value).includes('.');
+
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = value * eased;
+      el.textContent = (isDecimal ? current.toFixed(1) : Math.round(current)) + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = value + suffix;
+    };
+    requestAnimationFrame(tick);
+  };
+
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target);
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+
+  statEls.forEach(el => statsObserver.observe(el));
+
+  /* ================= CONTACT FORM ================= */
+  const form = document.querySelector('.contact-form form');
+  if (form) {
+    const submitBtn = form.querySelector('button[type="submit"]');
+    let note = form.querySelector('.form-note');
+    if (!note) {
+      note = document.createElement('p');
+      note.className = 'form-note';
+      note.textContent = "Thanks — we'll be in touch within one business day.";
+      form.appendChild(note);
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        note.classList.add('visible');
+        form.reset();
+        setTimeout(() => note.classList.remove('visible'), 5000);
+      }, 900);
+    });
+  }
+
+  /* ================= SMOOTH ANCHOR OFFSET ================= */
+  const headerHeight = () => header.offsetHeight;
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const id = anchor.getAttribute('href');
+      if (id.length < 2) return;
+      const target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      const top = target.getBoundingClientRect().top + window.scrollY - headerHeight() + 1;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+
+});
