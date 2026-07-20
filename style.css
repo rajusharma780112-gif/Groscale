@@ -192,14 +192,14 @@ header.scrolled{
 }
 
 .nav{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 24px;
 }
 
-.logo{ display: flex; align-items: center; gap: 12px; }
-.logo img{ height: 54px; width: auto; }
+.logo{ display: flex; align-items: center; gap: 12px; grid-column: 2; justify-self: center; }
+.logo img{ height: 62px; width: auto; }
 .logo-tag{
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -216,6 +216,8 @@ header nav{
   display: flex;
   align-items: center;
   gap: 36px;
+  grid-column: 1;
+  justify-self: start;
 }
 header nav a{
   font-size: 0.9rem;
@@ -238,7 +240,7 @@ header nav a.active{ color: var(--text); }
 header nav a:hover::after,
 header nav a.active::after{ width: 100%; }
 
-.nav > .btn{ padding: 11px 24px; font-size: 0.85rem; }
+.nav > .btn{ padding: 11px 24px; font-size: 0.85rem; grid-column: 3; justify-self: end; }
 
 .menu-toggle{
   display: none;
@@ -249,6 +251,8 @@ header nav a.active::after{ width: 100%; }
   cursor: pointer;
   color: var(--text);
   font-size: 1rem;
+  grid-column: 3;
+  justify-self: end;
 }
 
 .mobile-menu{
@@ -760,6 +764,9 @@ footer{
   header nav, .nav > .btn{ display: none; }
   .logo-tag{ display: none; }
   .menu-toggle{ display: flex; }
+  .nav{ grid-template-columns: auto auto; justify-content: space-between; }
+  .logo{ grid-column: 1; justify-self: start; }
+  .menu-toggle{ grid-column: 2; }
   .section{ padding: 90px 0; }
   .hero{ padding: 150px 0 80px; }
   .contact-grid{ grid-template-columns: 1fr; }
